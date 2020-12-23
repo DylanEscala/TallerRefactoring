@@ -11,14 +11,15 @@ public abstract class Persona{
     public String facultad;
     public ArrayList<Paralelo> paralelos;
 
-    public Persona(String nombre, String apellido, int edad, String direccion, String telefono){
+    public Persona(String nombre, String apellido, int edad, String direccion, String telefono, String facultad){
     	this.nombre = nombre;
     	this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.direccion = direccion;
         this.telefono = telefono;
-        paralelos= new ArrayList<>();
+        this.facultad = facultad;
+        paralelos = new ArrayList<>();
     }
 
     //Getter y setter del Nombre
@@ -66,5 +67,15 @@ public abstract class Persona{
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+    public String getFacultad() {
+        return facultad;
+    }
+
+    public void setFacultad(String facultad) {
+        this.facultad = facultad;
+    }
+    public void anadirParalelos(Paralelo p){
+        paralelos.add(p);
     }
 }
