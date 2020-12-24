@@ -14,5 +14,8 @@ public class Profesor {
         this.bonoFijo = bonofijo
 
     }
+    public double calcularSueldo(){
+        return añosdeTrabajo*600 + bonoFijo;
+    }  
 
 }
