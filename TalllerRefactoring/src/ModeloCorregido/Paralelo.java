@@ -7,6 +7,7 @@ public class Paralelo {
     public Materia materia;
     public Profesor profesor;
     public ArrayList<Estudiante> estudiantes;
+
     public Ayudante ayudante;
 
     public int getNumero() {
@@ -16,6 +17,7 @@ public class Paralelo {
     public void setNumero(int numero) {
         this.numero = numero;
     }
+
 
     public Materia getMateria() {
         return materia;
@@ -39,4 +41,5 @@ public class Paralelo {
     }
     
     
+
 }
