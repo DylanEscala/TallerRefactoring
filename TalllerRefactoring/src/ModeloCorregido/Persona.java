@@ -22,7 +22,6 @@ public abstract class Persona{
         paralelos = new ArrayList<>();
     }
 
-    //Getter y setter del Nombre
     public String getNombre() {
         return nombre;
     }
@@ -31,7 +30,6 @@ public abstract class Persona{
         this.nombre = nombre;
     }
     
-    //Getter y setter del Apellido
     public String getApellido() {
         return apellido;
     }
@@ -41,7 +39,6 @@ public abstract class Persona{
     }
     
     
-    //Getter y setter de la edad
     public int getEdad() {
         return edad;
     }
@@ -50,7 +47,6 @@ public abstract class Persona{
         this.edad = edad;
     }
     
-    //Getter y setter de la direccion
     public String getDireccion() {
         return direccion;
     }
@@ -59,7 +55,6 @@ public abstract class Persona{
         this.direccion = direccion;
     }
     
-    //Getter y setter del telefono
 
     public String getTelefono() {
         return telefono;

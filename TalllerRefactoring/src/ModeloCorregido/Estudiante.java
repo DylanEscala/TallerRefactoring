@@ -14,26 +14,25 @@ public class Estudiante extends Persona {
     }
 
     public double CalcularNota(Paralelo p, Nota notas) {
-        double nota = 0;
         for (Paralelo par : paralelos) {
             if (p.equals(par)) {
                 double notaTeorico = (notas.getNexamen() + notas.getNdeberes() + notas.getNlecciones()) * 0.80;
                 double notaPractico = (notas.getNtalleres()) * 0.20;
-                nota = notaTeorico + notaPractico;
+                double nota = notaTeorico + notaPractico;
+                return nota;
             }
         }
-        return nota;
+        return 0;
     }
 
     public double CalcularNotaTotal(Paralelo p) {
-        double notaTotal = 0;
         for (Paralelo par : paralelos) {
             if (p.equals(par)) {
-                notaTotal = (p.getMateria().notaInicial + p.getMateria().notaFinal) / 2;
-
+                double notaTotal = (p.getMateria().notaInicial + p.getMateria().notaFinal) / 2;
+                return notaTotal;
             }
         }
-        return notaTotal;
+        return 0;
 
     }
 }
