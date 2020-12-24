@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import modelos.Paralelo;
 
-public class Estudiante {
+public class Estudiante extends Persona{
 	 //Informacion del estudiante
     public String matricula;
     
